@@ -25,10 +25,14 @@ def perform_query():
     result = None
     for query in validated_data['queries']:
         result = build_query(
-            cmd=validated_data['cmd'],
-            value=validated_data['value'],
+            cmd=query['cmd'],
+            value=query['value'],
             file_name=validated_data['file_name'],
             data=result
         )
 
     return jsonify(result)
+
+
+if __name__ == '__main__':
+    app.run(host="localhost", port=10001, debug=True)
