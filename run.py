@@ -7,4 +7,4 @@ from config import Config
 app: Flask = create_app(Config)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10001)
+    app.run(host='0.0.0.0', port=10002)
