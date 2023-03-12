@@ -8,4 +8,4 @@ class Config(object):
     DB_HOST: str = os.getenv('DB_HOST')
     DB_PORT: int = 5432
     SQLALCHEMY_DATABASE_URI = f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
-    # SQLALC HEMY_TRACK_MODIFICATIONS = False
+    # SQLALCHEMY_TRACK_MODIFICATIONS = False

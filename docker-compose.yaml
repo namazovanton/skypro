@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   app:
-    image: namazovanton/skypro:main-4338104968
+    build: .
     ports:
       - 10002:10002
     depends_on:
